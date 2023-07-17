@@ -18,7 +18,7 @@ const formatToMarkdown = ({ type, message }) => {
   }
 
   // 引用换行
-  message = message.replace(/\n/g, ' \n\n > ').replace(/ +/g, ' ')
+  // message = message.replace(/\n/g, ' \n\n > ').replace(/ +/g, ' ')
 
   return {
     title: `签到${type === 'info' ? '成功 🎉' : '失败 💣'}`,
